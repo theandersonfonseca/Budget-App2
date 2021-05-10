@@ -1,7 +1,7 @@
 export default {
   colors: {    
     primary: '#5a9b67',
-    secondary: '#f11a16',
+    secondary: ' #cf5856',
     white: '#FAFAFA',
     dark: '#333',
     gray: '#928d8d',
@@ -21,7 +21,7 @@ export default {
     large: '1.8rem',
     xlarge: '2.0rem',
     xxlarge: '2.8rem',
-    huge: '5.2rem'
+    huge: '4rem'
   },
 
   spacings: {
