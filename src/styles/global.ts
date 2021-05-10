@@ -30,6 +30,9 @@ const GlobalStyle = createGlobalStyle`
       text-rendering: optimizeSpeed;
       line-height: 1.5;
       background: ${theme.colors.primary};
+      display: flex;
+      justify-content: center;
+      align-items: center;
   `}
   }
 
