@@ -1,4 +1,5 @@
-import {uniqueID} from '../utils/uniqueID'
+import uniqueID from '../utils/uniqueID'
+
 import {BudgetStateType, Actions, ActionsType} from './types'
 
 export const BudgetReducer = (state: BudgetStateType, action: ActionsType) => {
