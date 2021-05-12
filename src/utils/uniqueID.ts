@@ -1,1 +1,3 @@
-export const uniqueID = () => Math.floor(Math.random() * Date.now());
+export default function uniqueID() { 
+  return Math.floor(Math.random() * Date.now())
+};
