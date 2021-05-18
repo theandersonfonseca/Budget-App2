@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { css } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
+import { css } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -18,14 +18,14 @@ const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: 62.5%; 
+    font-size: 62.5%;
   }
 
   body {
-    ${({ theme }) => css` 
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+    ${({ theme }) => css`
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+        'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
       min-height: 100vh;
       text-rendering: optimizeSpeed;
       line-height: 1.5;
@@ -33,7 +33,7 @@ const GlobalStyle = createGlobalStyle`
       display: flex;
       justify-content: center;
       align-items: center;
-  `}
+    `}
   }
 
   button {
@@ -52,6 +52,6 @@ const GlobalStyle = createGlobalStyle`
   select {
     font: inherit;
   }
-`;
+`
 
-export default GlobalStyle;
+export default GlobalStyle

@@ -1,14 +1,14 @@
-import {ContextProvider} from './state/context'
+import { ContextProvider } from './state/context'
 
-import { ThemeProvider } from 'styled-components';
-import GlobalStyle from './styles/global';
-import theme from './styles/theme';
+import { ThemeProvider } from 'styled-components'
+import GlobalStyle from './styles/global'
+import theme from './styles/theme'
 
-import Container from './components/Container';
-import Heading from './components/Heading';
-import Results from './components/Results';
-import Inputs from './components/Inputs';
-import Histories from './components/Histories';
+import Container from './components/Container'
+import Heading from './components/Heading'
+import Results from './components/Results'
+import Inputs from './components/Inputs'
+import Histories from './components/Histories'
 
 function App() {
   return (
@@ -16,19 +16,19 @@ function App() {
       <ContextProvider>
         <Container>
           <div>
-            <Heading/>
-            <Results/>
+            <Heading />
+            <Results />
           </div>
 
           <div>
-            <Inputs/>
-            <Histories/>
+            <Inputs />
+            <Histories />
           </div>
         </Container>
       </ContextProvider>
       <GlobalStyle />
     </ThemeProvider>
-  );
+  )
 }
 
-export default App;
+export default App

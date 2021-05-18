@@ -1,17 +1,17 @@
 export default {
-  colors: {    
+  colors: {
     primary: '#5a9b67',
     secondary: ' #cf5856',
     white: '#FAFAFA',
     dark: '#333',
     gray: '#928d8d',
-    grayLight: '#eee',
+    grayLight: '#eee'
   },
 
   font: {
     light: 300,
     normal: 400,
-    bold: 600,
+    bold: 600
   },
 
   sizes: {
@@ -49,7 +49,5 @@ export default {
 
   border: {
     radius: '0.4rem'
-  },
+  }
 } as const
-
-

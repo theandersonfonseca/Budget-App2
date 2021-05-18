@@ -1,32 +1,37 @@
 import { useContext, useEffect, useState } from 'react'
 
-import {Context} from '../../state/context'
+import { Context } from '../../state/context'
 
 import convertToMoney from '../../utils/convertToMoney'
 
 import * as S from './styles'
 
 const Results = () => {
-  const {state} = useContext(Context)
+  const { state } = useContext(Context)
 
   const [amounts, setAmounts] = useState({
-    income: 0, 
+    income: 0,
     expense: 0,
     balance: 0
-  })  
-  
+  })
+
   useEffect(() => {
-    const newIncome = state.incomeList.reduce((acc, income) => acc + income.amount, 0)
-    const newExpense = state.expenseList.reduce((acc, expense) => acc + expense.amount, 0)
+    const newIncome = state.incomeList.reduce(
+      (acc, income) => acc + income.amount,
+      0
+    )
+    const newExpense = state.expenseList.reduce(
+      (acc, expense) => acc + expense.amount,
+      0
+    )
     const newBalance = newIncome - newExpense
 
     setAmounts({
-      income: newIncome, 
+      income: newIncome,
       expense: newExpense,
-      balance: newBalance,
+      balance: newBalance
     })
   }, [state])
-
 
   return (
     <S.Wrapper>
